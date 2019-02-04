@@ -1,0 +1,272 @@
+html,
+body {
+  margin   : 0;
+  padding  : 0;
+  width    : 100%;
+  height   : 100%;
+  overflow : hidden;
+}
+
+body {
+  width          : 100%;
+  height         : 100%;
+  display        : flex;
+  flex-direction : column;
+}
+
+.configurable-application--loading {
+  text-align : center;
+  display    : block;
+  height     : 100%;
+  width      : 100%;
+  overflow   : hidden;
+  background : #fff url(../assets/loader-ie9.gif) no-repeat center center;
+}
+
+.wrapper {
+  width          : 100%;
+  height         : 100%;
+  display        : flex;
+  flex-direction : column;
+}
+
+.top-nav {
+  flex-grow      : 0;
+  flex-shrink    : 1;
+  display        : flex;
+  flex-direction : column;
+  border         : none;
+  background     : url(../assets/hero.jpg) no-repeat center top;
+}
+
+.top-nav-content {
+  padding : 0 20px 0 25px;
+}
+
+#user-thumb-node {
+  height         : 36px;
+  border-radius  : 18px;
+  vertical-align : middle;
+}
+
+.top-nav-link:hover, .top-nav-link:focus {
+  color               : #fff;
+  border-bottom-color : #fff;
+  text-decoration     : none;
+}
+
+#group_title * {
+  vertical-align : middle;
+}
+
+#group-thumb {
+  height : 36px;
+}
+
+#main-container {
+  height      : calc(100vh - 75px);
+  margin      : 0;
+  padding     : 0;
+  flex-grow   : 1;
+  flex-shrink : 1;
+  display     : flex;
+}
+
+#group-container {
+  width          : 25%;
+  opacity        : 1;
+  margin         : 0;
+  order          : 0;
+  flex-shrink    : 1;
+  flex-grow      : 0;
+  display        : flex;
+  flex-direction : column;
+  transition     : opacity 0.5s 0.5s ease-in-out, padding 0.5s ease-in-out, width 0.5s ease-in-out;
+}
+
+#group-container.collapsed {
+  width      : 0;
+  opacity    : 0;
+  padding    : 0;
+  transition : opacity 0.5s ease-in-out, padding 0.5s 0.5s ease-in-out, width 0.5s 0.5s ease-in-out;
+}
+
+#map-container {
+  margin      : 0;
+  padding     : 0;
+  order       : 1;
+  flex-shrink : 1;
+  flex-grow   : 1;
+}
+
+.view-node {
+  width  : 100%;
+  height : 100%;
+}
+
+.panel-toggle-left {
+  z-index    : 99;
+  position   : absolute;
+  cursor     : pointer;
+  left       : 0;
+  top        : calc(50% - 15px);
+  padding    : 4px 0;
+  color      : #666;
+  background : #fff;
+}
+
+.panel-toggle-left:hover {
+  background-color : #f0f0f0;
+}
+
+#notifications-node {
+  position : sticky;
+  left     : 5px;
+  bottom   : 5px;
+}
+
+#notifications-node .alert {
+  opacity : 0.9;
+}
+
+#items-list {
+  max-height : 50vh;
+  overflow   : auto;
+}
+
+.card-wide button img {
+  vertical-align : middle;
+}
+
+.card-image-caption img {
+  vertical-align : middle;
+}
+
+#group-items-list {
+  height   : calc(100vh - 300px);
+  overflow : auto;
+}
+
+.esri-layer-list__item-actions-menu-item--active,
+.esri-layer-list__item-actions-menu-item--active:hover {
+  color            : #0079c1 !important;
+  background-color : #fff !important;
+}
+
+.docs-toggle-spacer {
+  padding-top    : 1.2rem;
+  padding-bottom : 0.825rem;
+}
+
+.item-card {
+  position   : relative;
+  background : #fff;
+  box-shadow : 0 0 0 1px rgba(0, 0, 0, 0.1), 0 0 16px 0 rgba(0, 0, 0, 0.05);
+}
+
+.item-icon {
+  margin : -2px;
+}
+
+.card-wide-image-wrap {
+  margin     : auto 0 auto 10px;
+  box-shadow : 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.item-card-snippet {
+  /*height        : 3em;
+  width         : 200px;
+  overflow      : hidden;
+  white-space   : nowrap;
+  text-overflow : ellipsis;*/
+}
+
+.esri-ui-corner .esri-expand .esri-widget--panel,
+.esri-ui-corner .esri-expand .esri-widget--panel-height-only,
+.esri-ui-corner .esri-component.esri-widget--panel {
+  width : 350px !important;
+}
+
+.view-loading-node {
+  box-shadow       : none !important;
+  transition-delay : 2s !important;
+}
+
+.view-loading-node .loader-text {
+  color       : #fff;
+  padding-top : 2.5rem;
+}
+
+.legend-panel {
+  position : relative;
+}
+
+.legend-toggle {
+  position : absolute;
+  top      : 0.5em;
+  left     : -5px;
+}
+
+.legend-toggle-hidden {
+  position : relative;
+}
+
+.subscriber-content-badge {
+  vertical-align : middle;
+  /*margin         : 0 5px;*/
+  width          : 24px;
+  height         : 24px;
+  border-radius  : 12px;
+  box-shadow     : 0 1px 2px rgba(0, 0, 0, 0.3);
+  background     : #dbedfa url(../assets/subscriber_content.png) center center no-repeat;
+}
+
+.view-spin-node {
+  padding       : 0;
+  z-index       : 99;
+  position      : absolute;
+  top           : 15px;
+  left          : calc(50% - 45px);
+  background    : #fff;
+  border-radius : 9px;
+}
+
+.spin-btn {
+  margin : 0 5px;
+}
+
+.spin-btn {
+  margin : 0 5px;
+  color  : #999;
+}
+
+.spin-btn:hover,
+.spin-btn.selected {
+  color       : #0079c1 !important;
+  text-shadow : 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+#always-up-btn {
+  vertical-align : text-top;
+  line-height    : 1.1em;
+  margin         : 0 2px;
+}
+
+.esri-ui-corner .esri-expand .esri-widget--panel,
+.esri-ui-corner .esri-expand .esri-widget--panel-height-only,
+.esri-ui-corner .esri-component.esri-widget--panel,
+.esri-ui-corner .esri-component.esri-widget--panel-height-only {
+  min-height : unset !important;
+}
+
+.esri-expand__icon-number {
+  background-color : #0079c1 !important;
+}
+
+#beta-label {
+  vertical-align : text-bottom;
+  line-height    : 1.75rem;
+}
+
+
+

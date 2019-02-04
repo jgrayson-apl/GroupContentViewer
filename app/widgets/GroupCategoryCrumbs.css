@@ -1,0 +1,42 @@
+
+.category-filter {
+  height      : 1.5em;
+  line-height : 1.5em;
+}
+
+.category-filter * {
+  outline : none;
+}
+
+.crumb.esri-interactive:hover {
+  color : #0079c1;
+}
+
+.category-dropdown {
+  height      : 1.2em;
+  line-height : 1.2em;
+}
+
+.category-dropdown .dropdown-link {
+  color : #0079c1;
+}
+
+.category-dropdown .dropdown-menu {
+  padding    : 6px;
+  border     : none;
+  background : rgba(238, 238, 238, 0.8);
+}
+
+.category-btn {
+  padding : 0 !important;
+  margin  : 0 !important;
+  border  : none !important;
+}
+
+.categories-tooltip.tooltip:after {
+  text-align : left;
+}
+
+.categories-tooltip.tooltip-multiline:after {
+  max-width : unset;
+}
